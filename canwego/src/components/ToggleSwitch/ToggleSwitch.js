@@ -7,9 +7,10 @@ import { v4 as uuidv4 } from "uuid";
  * ## Composant
  *
  * ```jsx
- * <ToggleSwitch></ToggleSwitch>
+ * <ToggleSwitch />
  * ```
  * ## Aperçu
+ * 
  */
 
 const ToggleSwitch = () => {

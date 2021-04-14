@@ -1,15 +1,11 @@
 import './App.css';
-import ToggleSwitch from './components/ToggleSwitch/ToggleSwitch'
+import Header from './components/Header/Header'
 function App() {
   return (
     <div className="App">
     
-      <ToggleSwitch />
-      <ToggleSwitch />
-      <ToggleSwitch />
-      <ToggleSwitch />
-
-    
+      <Header/>
+      
     </div>
   );
 }
