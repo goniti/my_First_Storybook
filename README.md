@@ -4,8 +4,12 @@
 
 ---
 
-Api selected is https://stormglass.io/
-the technology that will be used to build the user interface, will be react and styled components.
+The technology that will be used to build the user interface, will be react and styled components.
+---
+we will communicate with 
+- [Weather API - stormglass](https://stormglass.io/)  
+- [Astronomy API - ipgeolocation](https://ipgeolocation.io/astronomy-api.html) 
+- [Health API - vaccovid](https://vaccovid.live/)
 
 here are some inspirations link:
 

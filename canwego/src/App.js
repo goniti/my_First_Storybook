@@ -1,10 +1,12 @@
 import './App.css';
-import Header from './components/Header/Header'
+import Pictogram from './components/Pictogram/Pictogram'
+import hoodie from "./img/hoodie.svg"
+
 function App() {
   return (
     <div className="App">
     
-      <Header/>
+      <Pictogram iconName={hoodie}/>
       
     </div>
   );
