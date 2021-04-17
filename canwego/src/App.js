@@ -1,12 +1,11 @@
 import './App.css';
-import Pictogram from './components/Pictogram/Pictogram'
-import hoodie from "./img/hoodie.svg"
+import WeatherOverview from './components/WeatherOverview/WeatherOverview'
 
 function App() {
   return (
     <div className="App">
     
-      <Pictogram iconName={hoodie}/>
+      <WeatherOverview/>
       
     </div>
   );
