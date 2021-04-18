@@ -13,10 +13,10 @@ MainWeather.defaultProps = {
 export default MainWeather;
 
 const Weather = styled.p`
-  font-weight: 500;
+  font-weight: 300;
   font-size: 6rem;
   position: absolute;
   bottom: -8rem;
-  color: #00f3ff;
+  color: #5e5c5a;
   margin-left: 2rem;
 `;

@@ -13,117 +13,124 @@ const EmojiSun = () => (
 export default EmojiSun;
 
 const SunSize = "6rem";
-const SunColor = "#5ca8a6";
-const BeamThickness = "0.4rem";
-const BeamBreadth = "1.2rem";
-
-
+const SunColor = "#c5e1e2";
+const BeamThickness = "0.6rem";
+const BeamBreadth = "1.5rem";
+const BeamPositionY = "2.5";
+const BeamPositionX = "-2.5rem";
+const BeamGutter = ".5rem";
+const BeamRounded = ".5rem"
+const SunBeam = `${SunSize} + ${BeamBreadth} * 2 + ${BeamGutter} * 2`;
 
 const Circle = styled.span`
   position: relative;
   height: ${SunSize};
   width: ${SunSize};
-  border: solid 0.4rem ${SunColor};
+  border: solid ${BeamThickness} ${SunColor};
   background-color: ${SunColor};
   border-radius: 50%;
 `;
 
 const HorizontalSunBeam = styled.span`
   display: flex;
+  align-items: center;
   position: absolute;
-  top: calc(${SunSize} / 2.3);
-  left: -1.86rem;
-  width: calc(${SunSize} + 3rem);
+  top: calc(${SunSize} / ${BeamPositionY});
+  left: ${BeamPositionX};
+  width: calc(${SunBeam});
   &::after {
     content: "";
-    width: 1.2rem;
-    height: 0.4rem;
+    width: ${BeamBreadth};
+    height: ${BeamThickness};
     background-color: ${SunColor};
-    border-radius: 15px;
+    border-radius: ${BeamRounded};
     position: absolute;
     right: 0;
   }
   &::before {
     content: "";
-    width: 1.2rem;
-    height: 0.4rem;
+    width: ${BeamBreadth};
+    height: ${BeamThickness};
     background-color: ${SunColor};
-    border-radius: 15px;
+    border-radius: ${BeamRounded};
     position: absolute;
   }
 `;
 const VerticalSunBeam = styled.span`
   display: flex;
+  align-items: center;
   position: absolute;
-  top: calc(${SunSize} / 2.3);
-  left: -1.8rem;
-  width: calc(${SunSize} + 3rem);
+  top: calc(${SunSize} / ${BeamPositionY});
+  left: ${BeamPositionX};
+  width: calc(${SunBeam});
   transform: rotateZ(90deg);
   &::after {
     content: "";
-    width: 1.2rem;
-    height: 0.4rem;
+    width: ${BeamBreadth};
+    height: ${BeamThickness};
     background-color: ${SunColor};
-    border-radius: 15px;
+    border-radius: ${BeamRounded};
     position: absolute;
     right: 0;
   }
   &::before {
     content: "";
-    width: 1.2rem;
-    height: 0.4rem;
+    width: ${BeamBreadth};
+    height: ${BeamThickness};
     background-color: ${SunColor};
-    border-radius: 15px;
+    border-radius: ${BeamRounded};
     position: absolute;
   }
 `;
 const RightDiagonalSunBeam = styled.span`
   display: flex;
+  align-items: center;
   position: absolute;
-  top: calc(${SunSize} / 2.3);
-  left: -1.86rem;
-  width: calc(${SunSize} + 3rem);
+  top: calc(${SunSize} / ${BeamPositionY});
+  left: ${BeamPositionX};
+  width: calc(${SunBeam});
   transform: rotateZ(45deg);
   &::after {
     content: "";
-    width: 1.2rem;
-    height: 0.4rem;
+    width: ${BeamBreadth};
+    height: ${BeamThickness};
     background-color: ${SunColor};
-    border-radius: 15px;
+    border-radius: ${BeamRounded};
     position: absolute;
     right: 0;
   }
   &::before {
     content: "";
-    width: 1.2rem;
-    height: 0.4rem;
+    width: ${BeamBreadth};
+    height: ${BeamThickness};
     background-color: ${SunColor};
-    border-radius: 15px;
+    border-radius: ${BeamRounded};
     position: absolute;
   }
 `;
 const LeftDiagonalSunBeam = styled.span`
   display: flex;
+  align-items: center;
   position: absolute;
-  top: calc(${SunSize} / 2.3);
-  left: -1.86rem;
-  width: calc(${SunSize} + 3rem);
+  top: calc(${SunSize} / ${BeamPositionY});
+  left: ${BeamPositionX};
+  width: calc(${SunBeam});
   transform: rotateZ(-45deg);
   &::after {
     content: "";
-    width: 1.2rem;
-    height: 0.4rem;
+    width: ${BeamBreadth};
+    height: ${BeamThickness};
     background-color: ${SunColor};
-    border-radius: 15px;
+    border-radius: ${BeamRounded};
     position: absolute;
     right: 0;
   }
   &::before {
     content: "";
-    width: 1.2rem;
-    height: 0.4rem;
-    background-color:${SunColor};
-    border-radius: 15px;
+    width: ${BeamBreadth};
+    height: ${BeamThickness};
+    background-color: ${SunColor};
+    border-radius: ${BeamRounded};
     position: absolute;
   }
 `;
