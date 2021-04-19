@@ -1,14 +1,10 @@
-import './App.css';
-import WeatherOverview from './components/WeatherOverview/WeatherOverview'
+import "./App.css";
+import MainWeather from "./components/MainWeather/MainWeather";
 
-function App() {
-  return (
-    <div className="App">
-    
-      <WeatherOverview/>
-      
-    </div>
-  );
-}
+const App = () => (
+  <div className="App">
+    <MainWeather />
+  </div>
+);
 
 export default App;
