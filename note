@@ -2,3 +2,48 @@ https://www.flaticon.com/fr/icone-gratuite/pluie_414913
 https://www.flaticon.com/fr/icone-gratuite/pluie_414887
 https://www.flaticon.com/fr/icone-gratuite/pluie_414885
 https://www.flaticon.com/fr/icone-gratuite/neige_414883
+
+response api exemple:
+{
+  "base": "stations",
+  "clouds": {
+     "all": 0
+  },
+  "cod":200,
+  "coord": {
+     "lat": 47,
+     "lon": 1.833
+  },
+  "dt":15546,
+  "id":464,
+  "main":{
+     "feels_like": 15.31,
+     "humidity": 39,
+     "pressure": 1014,
+     "temp": 16.58,
+     "temp_max": 18,
+     "temp_min": 15 
+  },
+  "name": "yolo",
+  "sys":{
+      "country": "FR",
+      "id": 6504,
+      "sunrise": 1618980820,
+      "sunset": 1619030919,
+      "type": 1
+  },
+  "timezone": 7200,
+  "visibility": 10000,
+  "weather": [
+    {
+      "description": "clear sky",
+      "icon": "01d",
+      "id": 800,
+      "main": "Clear"
+    }
+  ],
+  "wind":{
+     "deg": 70,
+     "speed": 5.6
+   }
+}
