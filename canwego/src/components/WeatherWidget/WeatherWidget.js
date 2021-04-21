@@ -2,26 +2,46 @@ import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 
-const WeatherWidget = () => (
+const WeatherWidget = ({ weatherData }) => {
+  console.log(weatherData)
+return (
+ 
+  
   <WidgetWrapper>
-    <WidgetTopPart />
-    <WidgetBottomPart />
+    <WidgetWeatherTopPart>
+      <TopItemLeft>
+        <TopItemCurrentDate>{Date.now()}</TopItemCurrentDate>
+        <TopItemIllustration src="http://openweathermap.org/img/wn/04d@2x.png" />
+      </TopItemLeft>
+      <TopItemRight>
+        <TopItemMinDegree>temp_min</TopItemMinDegree>
+        <TopItemMaxDegree>temp_max</TopItemMaxDegree>
+      </TopItemRight>
+    </WidgetWeatherTopPart>
+    <WidgetWeatherBottomPart>
+      <BottomItem />
+      <BottomItemImage />
+      <BottomItemText />
+    </WidgetWeatherBottomPart>
   </WidgetWrapper>
-);
+)
+};
 
 export default WeatherWidget;
 
-const WidgetWrapper = styled.div`
+const WidgetWrapper = styled.div``;
+const WidgetWeatherTopPart = styled.div`
+  display: flex;
   background-color: red;
 `;
-const WidgetTopPart = styled.div`
-  display: flex;
-`;
-const CurrentDate = styled.p``;
-const WeatherIllustration = styled.span``;
-const MinMaxDegree = styled.p``;
+const TopItemLeft = styled.div``;
+const TopItemCurrentDate = styled.p``;
+const TopItemIllustration = styled.img``;
+const TopItemRight = styled.div``;
+const TopItemMinDegree = styled.p``;
+const TopItemMaxDegree = styled.p``;
 
-const WidgetBottomPart = styled.div``;
-const WidgetWeatherItem =  styled.div``;
-const WidgetWeatherItemText =  styled.p``;
-
+const WidgetWeatherBottomPart = styled.div``;
+const BottomItem = styled.div``;
+const BottomItemImage = styled.p``;
+const BottomItemText = styled.p``;
