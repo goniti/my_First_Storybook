@@ -2,12 +2,12 @@ import React, { useState, useEffect } from "react";
 import WeatherOverview from "../WeatherOverview/WeatherOverview";
 import WeatherWidget from "../WeatherWidget/WeatherWidget";
 
-const MainWeather = () => {
+const MainWeather = ({cityName}) => {
   const [data, setData] = useState([]);
   const isLoading = data.length !== 0;
   useEffect(() => {
     fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=issoudun&units=metric&appid=${process.env.REACT_APP_API_KEY}`
+      `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=${process.env.REACT_APP_API_KEY}`
     )
       .then((response) => response.json())
       .then(
@@ -18,7 +18,7 @@ const MainWeather = () => {
           console.error(error);
         }
       );
-  }, []);
+  }, [cityName]);
 
   return (
     <>
