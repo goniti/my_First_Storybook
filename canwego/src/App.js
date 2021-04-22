@@ -3,7 +3,7 @@ import MainWeather from "./components/MainWeather/MainWeather";
 
 const App = () => (
   <div className="App">
-    <MainWeather cityName={"paris"}/>
+    <MainWeather cityName={"Paris"}/>
   </div>
 );
 
